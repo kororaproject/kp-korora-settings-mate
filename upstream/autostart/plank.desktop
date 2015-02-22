@@ -1,0 +1,9 @@
+[Desktop Entry]
+Type=Application
+Exec=/usr/bin/plank
+Hidden=false
+X-MATE-Autostart-enabled=true
+Name[en_US]=Plank
+Name=Plank
+Comment[en_US]=Dock
+Comment=Dock

@@ -25,6 +25,8 @@ rm -rf %{buildroot}
 #mkdir -p %{buildroot}%{_libdir}/firefox/browser/defaults/profile
 mkdir -p %{buildroot}%{_sysconfdir}/skel/.config
 
+cp -a %{_builddir}/%{name}-%{version}/autostart %{buildroot}%{_sysconfdir}/skel/.config/
+cp -a %{_builddir}/%{name}-%{version}/compiz %{buildroot}%{_sysconfdir}/skel/.config/
 cp -a %{_builddir}/%{name}-%{version}/plank %{buildroot}%{_sysconfdir}/skel/.config/
 
 %clean
@@ -46,6 +48,9 @@ rm -rf %{buildroot}
 
 %files
 %defattr(-,root,root,-)
+%{_sysconfdir}/skel/.config/autostart/compiz-mate-gtk.desktop
+%{_sysconfdir}/skel/.config/autostart/plank.desktop
+%{_sysconfdir}/skel/.config/compiz
 %{_sysconfdir}/skel/.config/plank
 
 %changelog
