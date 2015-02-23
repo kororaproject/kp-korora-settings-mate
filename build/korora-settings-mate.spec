@@ -23,11 +23,13 @@ BuildRoot:  %{_tmppath}/%{name}-%{version}-%{release}-root-%(%{__id_u} -n)
 %install
 rm -rf %{buildroot}
 #mkdir -p %{buildroot}%{_libdir}/firefox/browser/defaults/profile
+mkdir -p %{buildroot}%{_datadir}/mate-panel/layouts
 mkdir -p %{buildroot}%{_sysconfdir}/skel/.config
 
 cp -a %{_builddir}/%{name}-%{version}/autostart %{buildroot}%{_sysconfdir}/skel/.config/
 cp -a %{_builddir}/%{name}-%{version}/compiz %{buildroot}%{_sysconfdir}/skel/.config/
 cp -a %{_builddir}/%{name}-%{version}/plank %{buildroot}%{_sysconfdir}/skel/.config/
+cp -a %{_builddir}/%{name}-%{version}/mate-panel-layouts/korora.layout %{buildroot}%{_datadir}/mate-panel/layouts/
 
 %clean
 rm -rf %{buildroot}
@@ -52,6 +54,7 @@ rm -rf %{buildroot}
 %{_sysconfdir}/skel/.config/autostart/plank.desktop
 %{_sysconfdir}/skel/.config/compiz
 %{_sysconfdir}/skel/.config/plank
+%{_datadir}/mate-panel/layouts/korora.layout
 
 %changelog
 * Sun Feb 22 2015 Ian Firns <firnsy@kororaproject.org> 0.1-1

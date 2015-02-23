@@ -5,9 +5,9 @@
 #Whether to show only windows of the current workspace.
 CurrentWorkspaceOnly=false
 #The size of dock icons (in pixels).
-IconSize=32
+IconSize=48
 #If 0, the dock won't hide.  If 1, the dock intelligently hides.  If 2, the dock auto-hides. If 3, the dock dodges active maximized windows.
-HideMode=1
+HideMode=2
 #Time (in ms) to wait before unhiding the dock.
 UnhideDelay=0
 #The monitor number for the dock. Use -1 to keep on the primary monitor.
@@ -27,7 +27,7 @@ ItemsAlignment=3
 #Whether to prevent drag'n'drop actions and lock items on the dock.
 LockItems=false
 #Whether to use pressure-based revealing of the dock if the support is available.
-PressureReveal=true
+PressureReveal=false
 #Whether to show only pinned applications. Useful for running more then one dock.
 PinnedOnly=false
 #Whether to automatically pin an application if it seems useful to do.
