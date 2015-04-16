@@ -1,0 +1,33 @@
+[Default Applications]
+audio/mpeg=audacious.desktop
+audio/x-mpegurl=audacious.desktop
+audio/x-scpls=audacious.desktop
+audio/x-vorbis+ogg=audacious.desktop
+audio/x-wav=audacious.desktop
+x-scheme-handler/http=firefox.desktop
+x-scheme-handler/https=firefox.desktop
+x-scheme-handler/about=firefox.desktop
+x-scheme-handler/mailto=mozilla-thunderbird.desktop
+application/x-extension-eml=mozilla-thunderbird.desktop
+message/rfc822=mozilla-thunderbird.desktop
+inode/directory=caja-folder-handler.desktop
+text/plain=pluma.desktop
+video/mp4=vlc.desktop
+video/mpeg=vlc.desktop
+video/mp2t=vlc.desktop
+video/msvideo=vlc.desktop
+video/quicktime=vlc.desktop
+video/webm=vlc.desktop
+video/x-avi=vlc.desktop
+video/x-flv=vlc.desktop
+video/x-matroska=vlc.desktop
+video/x-mpeg=vlc.desktop
+video/x-ogm+ogg=vlc.desktop
+image/bmp=shotwell-viewer.desktop
+image/gif=shotwell-viewer.desktop
+image/jpeg=shotwell-viewer.desktop
+image/png=shotwell-viewer.desktop
+image/tiff=shotwell-viewer.desktop
+
+[Added Associations]
+inode/directory=audacious.desktop;
