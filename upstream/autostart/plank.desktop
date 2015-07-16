@@ -3,6 +3,7 @@ Type=Application
 Exec=/usr/bin/plank
 Hidden=false
 X-MATE-Autostart-enabled=true
+X-MATE-Autostart-Delay=4
 Name[en_US]=Plank
 Name=Plank
 Comment[en_US]=Dock

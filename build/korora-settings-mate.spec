@@ -2,7 +2,7 @@
 
 Summary:    Korora configs for MATE
 Name:       korora-settings-mate
-Version:    0.3
+Version:    0.4
 Release:    1%{?dist}
 
 Group:      System Environment/Base
@@ -59,6 +59,9 @@ rm -rf %{buildroot}
 %{_datadir}/mate-panel/layouts/korora.layout
 
 %changelog
+* Thu Jul 16 2015 Ian Firns <firnsy@kororaproject.org> 0.4-1
+- Added start up delay to plank to solve non-appearance issues
+
 * Sun Feb 22 2015 Ian Firns <firnsy@kororaproject.org> 0.3-1
 - Added preferred applications
 
