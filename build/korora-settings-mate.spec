@@ -51,7 +51,6 @@ rm -rf %{buildroot}
 
 %files
 %defattr(-,root,root,-)
-%{_sysconfdir}/skel/.config/autostart/compiz-mate-gtk.desktop
 %{_sysconfdir}/skel/.config/autostart/plank.desktop
 %{_sysconfdir}/skel/.config/compiz
 %{_sysconfdir}/skel/.config/plank
