@@ -1,9 +1,0 @@
-[Desktop Entry]
-Type=Application
-Exec=/usr/bin/compiz-mate-gtk
-Hidden=false
-X-MATE-Autostart-enabled=true
-Name[en_US]=Compiz
-Name=Compiz
-Comment[en_US]=Desktop Effects
-Comment=Desktop Effects
