@@ -3,7 +3,7 @@
 Summary:    Korora configs for MATE
 Name:       korora-settings-mate
 Version:    0.6
-Release:    1%{?dist}
+Release:    2%{?dist}
 
 Group:      System Environment/Base
 License:    GPLv3+
@@ -28,7 +28,6 @@ mkdir -p %{buildroot}%{_sysconfdir}/skel/.config
 
 cp -a %{_builddir}/%{name}-%{version}/autostart %{buildroot}%{_sysconfdir}/skel/.config/
 cp -a %{_builddir}/%{name}-%{version}/compiz %{buildroot}%{_sysconfdir}/skel/.config/
-cp -a %{_builddir}/%{name}-%{version}/dconf %{buildroot}%{_sysconfdir}/skel/.config/
 cp -a %{_builddir}/%{name}-%{version}/plank %{buildroot}%{_sysconfdir}/skel/.config/
 cp -a %{_builddir}/%{name}-%{version}/mate-panel-layouts/korora.layout %{buildroot}%{_datadir}/mate-panel/layouts/
 cp %{_builddir}/%{name}-%{version}/mimeapps.list %{buildroot}%{_sysconfdir}/skel/.config/
@@ -54,12 +53,14 @@ rm -rf %{buildroot}
 %defattr(-,root,root,-)
 %{_sysconfdir}/skel/.config/autostart/plank.desktop
 %{_sysconfdir}/skel/.config/compiz
-%{_sysconfdir}/skel/.config/dconf
 %{_sysconfdir}/skel/.config/plank
 %{_sysconfdir}/skel/.config/mimeapps.list
 %{_datadir}/mate-panel/layouts/korora.layout
 
 %changelog
+* Wed Jul 29 2015 Ian Firns <firnsy@kororaproject.org> 0.6-2
+- Revert dconf user tweaks.
+
 * Mon Jul 27 2015 Ian Firns <firnsy@kororaproject.org> 0.6-1
 - Added dconf user tweaks.
 
