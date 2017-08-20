@@ -2,8 +2,8 @@
 
 Summary:    Korora configs for MATE
 Name:       korora-settings-mate
-Version:    0.6
-Release:    3%{?dist}
+Version:    0.7
+Release:    1%{?dist}
 
 Group:      System Environment/Base
 License:    GPLv3+
@@ -58,6 +58,9 @@ rm -rf %{buildroot}
 %{_datadir}/mate-panel/layouts/korora.layout
 
 %changelog
+* Sun Aug 20 2017 Ian Firns <firnsy@kororaproject.org> 0.7-1
+- Updated for 26 release
+
 * Fri Jul 31 2015 Chris Smart <csmart@kororaproject.org> 0.6-3
 - Use yumex-dnf in dock instead of yumex
 

@@ -3,9 +3,9 @@ expand=true
 orientation=top
 size=24
 
-[Object mint-menu]
+[Object mate-menu]
 object-type=applet
-applet-iid=MintMenuAppletFactory::MintMenuApplet
+applet-iid=MateMenuAppletFactory::MateMenuApplet
 toplevel-id=top
 position=0
 locked=true
