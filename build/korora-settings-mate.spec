@@ -3,7 +3,7 @@
 Summary:    Korora configs for MATE
 Name:       korora-settings-mate
 Version:    0.7
-Release:    1%{?dist}
+Release:    2%{?dist}
 
 Group:      System Environment/Base
 License:    GPLv3+
@@ -39,6 +39,9 @@ rm -rf %{buildroot}
 
 %post
 #cd %{_libdir}/firefox/browser/defaults/profile/
+
+# plank tweaks
+gsettings net.launchpad.plank.dock.settings:/net/launchpad/plank/docks/dock1/ theme Arc
 
 %postun
 # clean up the link on uninstall of this package (not updates though)
